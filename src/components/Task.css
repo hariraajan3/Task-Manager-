@@ -1,0 +1,70 @@
+ .task_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add_task{
+    background-color: lightyellow;
+    border-radius: 10px;
+    border:2px solid black;
+    padding: 10px;
+}
+.add_task_btn{
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    padding:10px ;
+    cursor: pointer;
+
+}
+.add_form{
+    display: flex;
+    gap: 5px ;
+}
+/*task list*/
+.list{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    background-color: rgb(127, 197, 255);
+    padding: 7px ;
+    border-radius:10px ;
+    width: 280px;
+    margin-bottom: 10px;
+}
+ul {
+  list-style-type: none;
+  padding-left:0 ;
+}
+.taskText{
+    font-size: 1.2rem;
+    word-break: break-word;
+    overflow: hidden;
+    text-wrap: nowrap;
+   
+    
+}
+.rename{
+    background-color: rgb(255, 255, 83);
+    border: none;
+    border-radius: 5px;
+    padding: 4px 6px;
+    cursor: pointer;
+    margin-left: 150px;
+}
+.delete{
+    background-color: rgb(228, 24, 41);
+    border: none;
+    border-radius: 5px;
+    padding: 4px 6px;
+    cursor: pointer;
+    
+}
+.completed{
+    text-decoration: line-through;
+} 
+
+
+

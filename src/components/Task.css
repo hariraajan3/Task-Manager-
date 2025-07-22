@@ -23,7 +23,7 @@
     gap: 5px ;
 }
 /*task list*/
-.list{
+/* .list{
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -43,16 +43,18 @@ ul {
     word-break: break-word;
     overflow: hidden;
     text-wrap: nowrap;
-   
-    
-}
+    flex
+} */
 .rename{
     background-color: rgb(255, 255, 83);
     border: none;
     border-radius: 5px;
     padding: 4px 6px;
     cursor: pointer;
-    margin-left: 150px;
+}
+ul {
+  list-style-type: none;
+  padding-left:0 ;
 }
 .delete{
     background-color: rgb(228, 24, 41);
@@ -60,11 +62,45 @@ ul {
     border-radius: 5px;
     padding: 4px 6px;
     cursor: pointer;
-    
 }
-.completed{
+/* .completed{
     text-decoration: line-through;
-} 
+}  */
 
 
 
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(127, 197, 255);
+  padding: 7px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 10px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.taskText {
+  font-size: 1.2rem;
+  word-break: break-word;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+.completed {
+  text-decoration: line-through;
+}

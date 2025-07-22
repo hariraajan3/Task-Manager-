@@ -9,6 +9,8 @@ export default function TaskManager(){
      
     const addTask=(text)=>{
         const newTask={id:Date.now(),text, completed:false, isEditing:false};
+        console.log(newTask);
+        
         setTasks([...tasks,newTask]);
     }
 
@@ -51,7 +53,7 @@ export default function TaskManager(){
         <h2>Task Manager</h2>
         <TaskForm addTask={addTask}/>
         <TaskList tasks={tasks} toggleTask={toggleTask} deleteTask={deleteTask} 
-         toggleEdit={toggleEdit} handleEdit={handleEdit} saveEdit={saveEdit}/>
+           toggleEdit={toggleEdit} handleEdit={handleEdit} saveEdit={saveEdit}/>
         <h4>Tasks : {tasks.length}</h4>
     </div>
 

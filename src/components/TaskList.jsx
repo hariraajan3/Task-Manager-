@@ -9,6 +9,7 @@ export default function TaskList({tasks,toggleTask,deleteTask,toggleEdit,saveEdi
             {
               tasks.map((task,index)=>( <li key={index}>
                 <div className="list">
+                  <div className="left">
                   <input type="checkbox" checked={task.completed} onChange={()=>toggleTask(task.id)}/>
                   {task.isEditing ? (< input
                      type="text"
@@ -20,10 +21,13 @@ export default function TaskList({tasks,toggleTask,deleteTask,toggleEdit,saveEdi
                      : 
                      (<div className={`taskText ${task.completed ? "completed":" "}`}>{task.text}</div>) 
                   }
+                  </div>
+                  <div className="right">
                   <button className="rename" onClick={()=>toggleEdit(task.id)}>
                     {task.isEditing ? <FaCheck />:<FaPencilAlt /> }
                   </button>
                   <button className="delete" onClick={()=>deleteTask(task.id)}><RiDeleteBin6Line /></button>
+                  </div>
                 </div>
               </li>))
             }

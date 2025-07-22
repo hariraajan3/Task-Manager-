@@ -3,7 +3,6 @@
     flex-direction: column;
     align-items: center;
 }
-
 .add_task{
     background-color: lightyellow;
     border-radius: 10px;
@@ -16,35 +15,39 @@
     border-radius: 5px;
     padding:10px ;
     cursor: pointer;
-
 }
 .add_form{
     display: flex;
     gap: 5px ;
 }
 /*task list*/
-/* .list{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    background-color: rgb(127, 197, 255);
-    padding: 7px ;
-    border-radius:10px ;
-    width: 280px;
-    margin-bottom: 10px;
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(127, 197, 255);
+  padding: 7px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 380px;
+  margin-bottom: 10px;
 }
-ul {
-  list-style-type: none;
-  padding-left:0 ;
+.left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
-.taskText{
-    font-size: 1.2rem;
-    word-break: break-word;
-    overflow: hidden;
-    text-wrap: nowrap;
-    flex
-} */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.taskText {
+  font-size: 1.2rem;
+  word-break: break-word;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
 .rename{
     background-color: rgb(255, 255, 83);
     border: none;
@@ -63,44 +66,6 @@ ul {
     padding: 4px 6px;
     cursor: pointer;
 }
-/* .completed{
-    text-decoration: line-through;
-}  */
-
-
-
-.list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(127, 197, 255);
-  padding: 7px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 380px;
-  margin-bottom: 10px;
-}
-
-.left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex: 1;
-}
-
-.right {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.taskText {
-  font-size: 1.2rem;
-  word-break: break-word;
-  overflow: hidden;
-  text-wrap: nowrap;
-}
-
 .completed {
   text-decoration: line-through;
 }

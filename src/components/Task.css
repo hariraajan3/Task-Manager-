@@ -44,10 +44,14 @@
 }
 .taskText {
   font-size: 1.2rem;
-  word-break: break-word;
-  overflow: hidden;
-  text-wrap: nowrap;
+  white-space: nowrap;      
+  width: 280px;
+  overflow: hidden;          
+  text-overflow: ellipsis;   
+  max-width: 200px;         
+  display: inline-block;    
 }
+
 .rename{
     background-color: rgb(255, 255, 83);
     border: none;
